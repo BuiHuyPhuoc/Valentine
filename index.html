@@ -105,6 +105,7 @@
 
       noButton.addEventListener("click", function () {
         var randomInteger = Math.floor(Math.random() * (7 - 4 + 1)) + 4;
+        console.log(randomInteger);
         imageDisplay.src = imagePaths[randomInteger];
         buttonHeight += 50;
         buttonWidth += 50;
