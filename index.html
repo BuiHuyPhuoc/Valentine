@@ -104,14 +104,14 @@
       ];
 
       noButton.addEventListener("click", function () {
-        const randomInteger = Math.floor(Math.random() * (7 - 4 + 1)) + 4;
+        var randomInteger = Math.floor(Math.random() * (7 - 4 + 1)) + 4;
         imageDisplay.src = imagePaths[randomInteger];
-        buttonHeight += 50; // Increase height by 5px on each click
+        buttonHeight += 50;
         buttonWidth += 50;
-        fontSize += 35; // Increase font size by 1px on each click
-        yesButton.style.height = `${buttonHeight}px`; // Update button height
+        fontSize += 35;
+        yesButton.style.height = `${buttonHeight}px`;
         yesButton.style.width = `${buttonWidth}px`;
-        yesButton.style.fontSize = `${fontSize}px`; // Update font size
+        yesButton.style.fontSize = `${fontSize}px`;
 
         if (noClickCount < 10) {
           noButton.textContent = [
